@@ -1,22 +1,18 @@
 # Cordova Image Picker Plus
 
 Cordova Plugin For Multiple Image Selection - implemented for iOS and Android.
-Compatiple with https://github.com/Telerik-Verified-Plugins/ImagePicker
 
 ## Android: Enable Kotlin into config.xml file
 
 ```
 <preference name="GradlePluginKotlinEnabled" value="true"/>
-
 ```
 
 ## Installing the plugin
 
-    # Remove cordova-plugin-telerik-imagepicker if exist
-    cordova plugin rm cordova-plugin-telerik-imagepicker
-
-    # Install
-    cordova plugin add <path>/ImagePicker --variable PHOTO_LIBRARY_USAGE_DESCRIPTION="your usage message"
+```
+    cordova plugin add https://github.com/Qik-Company/cordova-plugin-image-picker --variable PHOTO_LIBRARY_USAGE_DESCRIPTION="your usage message"
+```
 
 ## Using the plugin
 

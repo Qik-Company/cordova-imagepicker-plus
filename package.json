@@ -1,6 +1,6 @@
 {
   "version": "2.4.0",
-  "name": "cordova-plugin-image-picker",
+  "name": "cordova-imagepicker-plus",
   "cordova_name": "ImagePicker",
   "description": "This plugin allows selection of multiple images from the camera roll / gallery in a phonegap app",
   "license": "MIT",
@@ -11,7 +11,7 @@
     "ios"
   ],
   "cordova": {
-    "id": "cordova-plugin-image-picker",
+    "id": "cordova-imagepicker-plus",
     "platforms": [
       "ios",
       "android"
