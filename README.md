@@ -11,7 +11,7 @@ Cordova Plugin For Multiple Image Selection - implemented for iOS and Android.
 ## Installing the plugin
 
 ```
-    cordova plugin add https://github.com/Qik-Company/cordova-plugin-image-picker --variable PHOTO_LIBRARY_USAGE_DESCRIPTION="your usage message"
+cordova plugin add https://github.com/Qik-Company/cordova-imagepicker-plus --variable PHOTO_LIBRARY_USAGE_DESCRIPTION="your usage message"
 ```
 
 ## Using the plugin
