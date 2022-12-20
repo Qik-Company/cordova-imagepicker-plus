@@ -70,7 +70,9 @@
             picker.delegate = self;
             [self checkPhotosPermissions:^(BOOL granted) {
                 if (granted) {
-                    [self.viewController presentViewController:picker animated:YES completion:nil];
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [self.viewController presentViewController:picker animated:YES completion:nil];
+                    });
                 } else {
                     CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Access has been denied. Change your setting > this app > Photo enable"];
                     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
@@ -85,7 +87,9 @@
     picker.delegate = self;
     [self checkPhotosPermissions:^(BOOL granted) {
         if (granted) {
-            [self.viewController presentViewController:picker animated:YES completion:nil];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.viewController presentViewController:picker animated:YES completion:nil];
+            });
         } else {
             CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Access has been denied. Change your setting > this app > Photo enable"];
             [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
